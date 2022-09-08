@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #88d4f4, #208be0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 6px 6px 10px 6px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.header #indicator {
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  animation: indicator-animation 1.5s ease infinite;
+  display: none;
+}
+
+@keyframes indicator-animation {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+    opacity: 0.7;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.speech-area {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: inset 0 0 5px 1px rgba(143, 143, 143, 0.5);
+}
+
+.speech-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px 20px 0;
+}
+
+.speech-buttons span {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #208be0;
+  padding: 2px 10px;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.speech-buttons span:last-child {
+  background-color: red;
+}
+
+.speech-buttons span:hover {
+  opacity: 0.8;
+  scale: 0.9;
+}
+
+.speech-buttons span:active {
+  opacity: 1;
+  scale: 1;
+}
+
+.speech-area textarea {
+  width: 100%;
+  font-size: 1.125rem;
+  color: #333;
+  resize: none;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.button-container button {
+  background: linear-gradient(to left, #88d4f4, #208be0);
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.button-container button:last-child {
+  background: linear-gradient(to right, #88d4f4, #208be0);
+}
+
+.button-container button:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-container button:active {
+  scale: 0.9;
+}

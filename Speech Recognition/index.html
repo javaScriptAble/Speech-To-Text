@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech To Text</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Speech To Text</h1>
+        <div id="indicator"></div>
+      </header>
+      <div class="speech-area">
+        <div class="speech-buttons">
+          <span id="copySpeech">Copy</span>
+          <span id="clearSpeech">Clear</span>
+        </div>
+        <textarea
+          id="textarea"
+          rows="10"
+          placeholder="Your speech goes here..."
+          spellcheck="false"
+        ></textarea>
+      </div>
+      <div class="button-container">
+        <button id="voiceStart">Start Speaking</button>
+        <button id="voiceFinish">Finish Speaking</button>
+      </div>
+    </div>
+  </body>
+</html>
